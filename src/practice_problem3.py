@@ -617,10 +617,10 @@ def practice_problem3d(sequence):
     #    TIME ESTIMATE:   8 minutes for each part of this problem.
     ###########################################################################
 
-    for k in range(len(sequence)):
-        if sequence[k] == 0:
-            return k
-    return -1
+    #for k in range(len(sequence)):
+     #   if sequence[k] == 0:
+      #      return k
+    #return -1
 
     ###########################################################################
     # TODO: 6. Just ABOVE this _TODO_, you should have implemented

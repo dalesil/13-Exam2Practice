@@ -87,7 +87,10 @@ def practice_problem2a(sequence, delta):
     #    TIME ESTIMATE:   5 minutes.
     ###########################################################################
 
-
+    x = []
+    for k in range(len(sequence)):
+        x.append(sequence[k] + delta)
+    return x
 
 def run_test_practice_problem2b():
     """ Tests the   practice_problem2b  function. """

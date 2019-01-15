@@ -188,7 +188,7 @@ def practice_problem2b(sequence):
       :type sequence: [str]
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -196,9 +196,16 @@ def practice_problem2b(sequence):
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
 
-    count = 0
+    s = ''
     for k in range(len(sequence)):
-        count = count + sequence
+        if len(sequence) < 1:
+            return s
+        else:
+            if sequence[k] != '':
+                s = s + sequence[k][0]
+
+
+    return s
 
 ###############################################################################
 # Our tests use the following to print error messages in red.

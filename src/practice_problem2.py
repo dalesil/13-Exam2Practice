@@ -44,7 +44,7 @@ def main():
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
     #   Include at least **   4    ** tests that, taken together,
     #   would form a    ** REASONABLY GOOD test set **
@@ -59,6 +59,29 @@ def run_test_practice_problem2a():
     print('Testing the   practice_problem2a   function:')
     print('--------------------------------------------------')
 
+    #Test 1
+    expected = [8, 16, 11, -14, 14]
+    actual = practice_problem2a([2, 10, 5, -20, 8], 6)
+    print("Expected: ", expected)
+    print("Actual: ", actual)
+
+    #Test 2
+    expected = [1, 2, 3, 4, 5]
+    actual = practice_problem2a([-1, 0, 1, 2, 3], 2)
+    print("Expected: ", expected)
+    print("Actual: ", actual)
+
+    #Test 3
+    expected = [20, 30, 40]
+    actual = practice_problem2a([10, 20, 30], 10)
+    print("Expected: ", expected)
+    print("Actual: ", actual)
+
+    #Test 4
+    expected = [100, 81, 47, 18, 3]
+    actual = practice_problem2a([93, 74, 40, 11, -4], 7)
+    print("Expected: ", expected)
+    print("Actual: ", actual)
 
 def practice_problem2a(sequence, delta):
     """
@@ -79,7 +102,7 @@ def practice_problem2a(sequence, delta):
       :type delta:    int
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     WRITE THE TESTS FIRST (above).
     ###########################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)

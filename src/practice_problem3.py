@@ -623,7 +623,7 @@ def practice_problem3d(sequence):
     #return -1
 
     ###########################################################################
-    # TODO: 6. Just ABOVE this _TODO_, you should have implemented
+    # DONE: 6. Just ABOVE this _TODO_, you should have implemented
     #     a solution for the   practice_problem3d   function.
     #     Here, put ANOTHER solution, as follows:
     #
@@ -638,6 +638,10 @@ def practice_problem3d(sequence):
     #          This solution should *** HAVE NO LOOP (no FOR). ***
     ###########################################################################
 
+    t = practice_problem3c(sequence)
+    if len(t) >= 1:
+        return t[0]
+    return -1
 
 def run_test_practice_problem3e():
     """ Tests the    practice_problem3e    function. """
